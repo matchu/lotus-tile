@@ -3,6 +3,11 @@
 %html{:lang => 'en'}
   %head
     %title The Lotus Tile: find the hidden KorraNation.com tiles
+    %meta{:property => 'og:title', :content => 'The Lotus Tile'}
+    %meta{:property => 'og:image', :content => 'http://korra.blob.core.windows.net/content/images/badge.png'}
+    %meta{:property => 'og:description', :content => 'Find the hidden KorraNation.com tiles for bonus content and an early release date'}
+    %meta{:property => 'og:url', :content => 'http://lotustile.heroku.com/'}
+
     %link{:type => 'text', :rel => 'stylesheet', :href => 'http://www.korranation.com/Content/korra/fonts.css'}
     %link{:type => 'text/css', :rel => 'stylesheet', :href => '/board.css'}
     = erb :analytics
