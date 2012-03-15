@@ -1,0 +1,45 @@
+!!!
+/ I'm the Avatar. You gotta deal with it.
+%html{:lang => 'en'}
+  %head
+    %title The Lotus Tile: find the hidden KorraNation.com tiles
+    %link{:type => 'text', :rel => 'stylesheet', :href => 'http://www.korranation.com/Content/korra/fonts.css'}
+    %link{:type => 'text/css', :rel => 'stylesheet', :href => '/board.css'}
+  %body
+    #wrapper
+      %header
+        %h1 The Lotus Tile
+        %p
+          Every day,
+          %strong three new hidden tiles
+          appear on the
+          %a{:href => 'http://www.korranation.com/'} KorraNation.com
+          Pai Sho board. And, each time you click one of these hidden tiles,
+          you unlock some neat concept art and
+          %strong the 100k counter goes up by one.
+        %p
+          This site automatically tracks the location of those hidden tiles, so
+          that you can
+          %a{:href => 'http://www.korranation.com/'} visit KorraNation.com each day
+          to click those tiles and do your part to help Korra see its March 24
+          release date.
+          %strong We can do it!
+        
+      #board
+        #board-image
+        #board-overlay
+      
+      %footer
+        %p
+          Site &copy; 2012
+          = succeed '.' do
+            %a{:href => 'https://github.com/matchu/'} Matchu
+          Design &copy; 2012 Viacom International Inc.
+        %p
+          Last updated
+          %time{:datetime => pai_sho.updated_at, :title => pai_sho.updated_at}
+            = human_time pai_sho.updated_at
+    
+    = include_tiles_javascript
+    %script{:type => 'text/javascript', :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
+    %script{:type => 'text/javascript', :src => '/board.js'}

@@ -1,0 +1,111 @@
+body {
+  background: #000;
+  color: #EDD434;
+  font-family: "Oldenburg", Arial, Verdana, Sans-Serif;
+  font-size: 12px;
+}
+
+a {
+  color: #B3A027;
+}
+
+a:hover {
+  color: inherit;
+}
+
+#wrapper {
+  width: 1280px;
+  height: 883px;
+  margin: 0 auto;
+  background: #000 url(http://korra.blob.core.windows.net/content/images/background.jpg) no-repeat;
+}
+
+header {
+  display: block
+  height: 100px;
+  position: absolute; 
+  text-align: center;
+  width: 1280px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 200%;
+  margin: 0;
+  padding: 0;
+}
+
+header p {
+  margin: 1em auto;
+  width: 50%;
+}
+
+header a {
+  font-weight: bold;
+}
+
+#board {
+  width: 980px;
+  height: 770px;
+  margin: 0 auto;
+  position:relative;
+  top:188px;
+  left:-3px;
+}
+
+.board-row {
+  position:relative;
+  margin:0 auto;
+}
+
+#board-overlay {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  left: 2px;
+}
+
+.board-square {
+  position:absolute;
+  width: 34px;
+  height: 34px;   
+}
+
+#board-image {
+  background: url(http://korra.blob.core.windows.net/content/images/gameboard.png) no-repeat;
+  width: 676px;
+  height: 693px;
+  position: absolute;
+  left: 171px;
+}
+
+.hidden-tile {
+  background: orange;
+  opacity: 0.75;
+  filter: alpha(opacity=50);
+}
+
+footer {
+  color:#585858;
+  font-family: Arial, Verdana, Helvetica, Sans-Serif;
+  position:absolute;
+  width:1280px;
+  height:15px;
+  font-size:10px;
+  top: 890px;
+  text-align:center;
+}
+
+footer a {
+   color:#585858;     
+}
+
+footer a:hover {
+   color:#ffffff;     
+}
+
+footer p {
+  margin: 0;
+}
