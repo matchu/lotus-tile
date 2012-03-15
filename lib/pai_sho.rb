@@ -31,7 +31,7 @@ class PaiSho
       end
     end
     
-    @updated_at = Time.now
+    @updated_at = Time.now.utc
     @tiles = tiles
   end
   
